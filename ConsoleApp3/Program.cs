@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -41,14 +42,15 @@ namespace ConsoleApp3
                     characters.AddRange(responseModel.results);
                 }
 
-                foreach (Character character in characters)
-                {
-                    Console.WriteLine(character.name);
-                    foreach (string film in character.films)
-						Console.WriteLine($"     {film}");
-                }
+                Dictionary<string, string[]> buddies = GetFilmGroups(characters.ToArray());
 
-                //Console.WriteLine(responseBody);
+				Console.WriteLine("Buddies:");
+                foreach (KeyValuePair<string, string[]> group in buddies)
+                {
+					Console.WriteLine(group.Key);
+					//foreach (string film in group.Value)
+					//	Console.WriteLine($"     {film}");
+				}
             }
             catch (HttpRequestException e)
             {
@@ -57,17 +59,50 @@ namespace ConsoleApp3
             }
         }
 
-        private Dictionary<int, string[]> GetFilmGroups(Character[] characters)
+        private static Dictionary<string, string[]> GetFilmGroups(Character[] characters)
 		{
-            Dictionary<int, string[]> groups = new Dictionary<int, string[]>();
-            int groupNumber = 0;
-            foreach (Character character in characters)
+            Dictionary<string, string[]> groups = new Dictionary<string, string[]>();
+            for(int i = 0; i < characters.Length; i++)
 			{
-                if (groupNumber == 0)
-                    groups.Add(groupNumber, character.films);
+                bool filmsMatch = false;
+                bool characterAdded = false;
+                string matchingKey = String.Empty;
+                foreach(KeyValuePair<string, string[]> group in groups)
+				{
+                    //check if they have the same number of films
+                    if (characters[i].films.Length != group.Value.Length)
+                        continue;
 
-                foreach()
-			}
+                    for(int j = 0; j < group.Value.Length; j++)
+					{
+                        if (characters[i].films[j] != group.Value[j])
+                        {
+                            filmsMatch = false;
+                            break;
+                        }
+                        filmsMatch = true;
+					}
+
+                    if(filmsMatch)
+					{
+                        matchingKey = group.Key;
+                        characterAdded = true;
+                        break;
+					}
+                    
+				}
+
+                if (!characterAdded)
+                    groups.Add(characters[i].name, characters[i].films);
+                else
+                {
+                    groups.Add($"{matchingKey}, {characters[i].name}", characters[i].films);
+                    groups.Remove(matchingKey);
+                }
+
+            }
+
+            return groups;
 		}
 
     }

@@ -1,0 +1,16 @@
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\StarWarsBuddies.exe
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\StarWarsBuddies.deps.json
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\StarWarsBuddies.runtimeconfig.json
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\StarWarsBuddies.runtimeconfig.dev.json
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\StarWarsBuddies.dll
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\StarWarsBuddies.pdb
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.csproj.AssemblyReference.cache
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.AssemblyInfoInputs.cache
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.AssemblyInfo.cs
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.csproj.CoreCompileInputs.cache
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.csproj.CopyComplete
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.dll
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.pdb
+C:\Users\boshowh2\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\StarWarsBuddies.genruntimeconfig.cache
